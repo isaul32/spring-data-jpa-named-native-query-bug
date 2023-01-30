@@ -2,6 +2,12 @@
 
 The Named native queries do not work with Spring Data JPA repositories.
 
+## Issues
+
+https://github.com/spring-projects/spring-data-jpa/issues/2779
+
+https://hibernate.atlassian.net/browse/HHH-16119
+
 
 ## Versions
 
@@ -18,8 +24,8 @@ OS: macOS 13 & Manjaro
 ```
 testNamedNativeQueries1: Passed
 testNamedNativeQueries2: Passed
-testNamedNativeQueries3: Failed <-- should fail with a appropriate exception (e.g. HibernateException)
-testNamedNativeQueries4: Failed <-- should call em without jakarta.persistence.Tuple resultClass
+testNamedNativeQueries3: Failed <-- should be valid
+testNamedNativeQueries4: Failed <-- should be valid (uses jakarta.persistence.Tuple result class)
 ```
 
 Spring Data JPA calls the entity manager as testNamedNativeQueries3.
