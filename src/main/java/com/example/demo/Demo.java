@@ -22,7 +22,7 @@ import jakarta.persistence.SqlResultSetMapping;
     classes = @ConstructorResult(
         targetClass = DemoPojo.class,
         columns = {
-            @ColumnResult(name = "id")
+            @ColumnResult(name = "id", type = Long.class)
         }
     )
 )
