@@ -12,6 +12,8 @@ repositories {
 	mavenCentral()
 }
 
+ext['hibernate.version'] = '6.2.0.CR3'
+
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	runtimeOnly 'com.h2database:h2'
